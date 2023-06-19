@@ -2,6 +2,9 @@
 <html>
     <head>
         <meta charset="UTC-8">
+        <!--external CSS, just like linking an image into the html file, we will link the css file-->
+        <!--other way is to configure the css configuration in the head section of the html file-->
+        <link rel="stylesheet" href="styles.css"/>
         <title>Notes</title>
     </head>
 <!--Lines above are the html boilerplate-->
@@ -29,5 +32,23 @@
             <li>one</li>
             <li>two</li>
         </ol>
-        <p>added line to test commit template</p>
+        <div>Hello, World!</div>
+        <div class="alert-test severe-warning">Please do not click this link</div>
+        <div id="UAENA-Welcome">Hi UAENA!</div>
+        <!--This is to use chain selectors-->
+        <!-- by general, you cannot chain 2 different selectors, (div and p)-->
+        <div>
+            <div class="subsection header">Latest Posts</div>
+            <p class="subsection" id="preview">This is where a preview is</div>
+        </div>
+        <div class="title">
+            <!--A-->
+            <div class="contents">
+                <!--B-->
+                <div class="contents">
+                    <!--C-->
+                </div>
+            </div>
+        </div>
+        <div class="contents"><!--D--></div>
     </body>

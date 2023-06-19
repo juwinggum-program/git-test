@@ -1,0 +1,85 @@
+div {
+    color: blue;
+}
+
+.alert-test {
+    color:red;
+}
+
+.severe-warning {
+    color:blueviolet;
+}
+/*we use # when id is used to tag a parameter*/
+#UAENA-Welcome {
+    background-color:azure;
+}
+/*this is to group separate groups instead of declaring both. this is also easier to edit both parameters sine we onlyh ave to do it once*/
+.read,
+.unread {
+    color: white;
+
+}
+.read {
+    /*several unique declarations*/
+    background-color: aqua;
+}
+.unread {
+    /*several unique declarations*/
+    background-color: bisque;
+}
+
+/*this selects the classes with both subsection and header */
+.subsection.header {
+    color:red;
+}
+/*we use # since preview is tagged as an id*/
+.subsection#preview {
+    color:blue;
+}
+/*in this title is the ancestor and contents is the child */
+/* this will only select the element 'contents' with ancestor with tag 'title'*/
+.title .contents {
+    color:aliceblue;
+}
+/* Order matters so .last declared might overwrite what .first_declared has configured*/
+.first_declared, .last_declared {
+    background-color: rgb (200,50,150);
+    font-weight:800;
+}
+
+.first_declared {
+    color: rgb (50,50,200);
+    font-size: 32px;
+}
+
+.last_declared {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/*there are several ways to declare a color*/
+
+p {
+    /*hex*/
+    color: #1100ff;
+}
+
+p {
+    /*rgb*/
+    color: rgb (100,0,127);
+}
+
+p {
+    /*hsl*/
+    color: hsl(15,82%, 56%);
+}
+
+/*text formatting*/
+
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:22px;
+    font-weight:700; /*bold*/
+    text-align: center;
+}
+
